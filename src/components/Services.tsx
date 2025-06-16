@@ -8,6 +8,7 @@ const Services = () => {
       title: "Химчистка мягкой мебели",
       description:
         "Профессиональная чистка диванов, кресел, стульев с использованием безопасной химии",
+      price: "от 1500 руб",
       features: [
         "Удаление пятен",
         "Устранение запахов",
@@ -20,6 +21,7 @@ const Services = () => {
       title: "Химчистка ковров",
       description:
         "Глубокая чистка ковров любых размеров и материалов с полной сушкой",
+      price: "от 800 руб/м²",
       features: [
         "Все типы ковров",
         "Удаление сложных пятен",
@@ -32,6 +34,7 @@ const Services = () => {
       title: "Химчистка матрасов",
       description:
         "Качественная чистка матрасов с устранением клещей и аллергенов",
+      price: "от 2000 руб",
       features: [
         "Противоклещевая обработка",
         "Удаление пятен",
@@ -69,6 +72,9 @@ const Services = () => {
                 <CardTitle className="text-xl font-bold text-gray-900">
                   {service.title}
                 </CardTitle>
+                <div className="text-2xl font-bold text-blue-500">
+                  {service.price}
+                </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-6 text-center">
